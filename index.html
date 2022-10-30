@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sell stuff simulator</title>
+
+        <link href="/static/css.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="main-title">sell stuff simulator</h1>
+        <div class="main-flex">
+            <div class="stats">
+                <h3>Products Sold: <span id="products-sold"></span></h3>
+                <h3>Day: <span id="day"></span></h3>
+                <h4>Funds: <span id="funds"></span></h4>
+                <h2>Reputation: <span id="reputation"></span></h2>
+                <!-- <div class="stats-bar-container" onclick="startImport()"><div class="bar" id="import-bar"></div></div> -->
+            </div>
+            <div class="options">
+                <div class="nav"><button onclick="switchTab('contracts')" class="nav-button">Contracts</button> <button onclick="switchTab('prices')" class="nav-button">Prices</button> <button onclick="switchTab('order')" class="nav-button">Order</button> <button onclick="switchTab('competition')" class="nav-button">Competition</button></div>
+
+                
+                <div id="contracts">
+                    <h2 class="section-identifier">Current Contracts</h2>
+                    <div class="section-header">
+                        <div><p>Company</p><p>Product</p><p>Stock</p><p>Surplus</p><p>Required Profit</p><p>Sell By</p></div>
+                    </div>
+
+                    <div class="offers contracts-parent" id="contracts-parent">
+                        <div class="offer" style="display: none;"><p>Example Offer</p><p>500</p><p>150</p><p>Day 6000</p></div></div>
+                    </div>
+
+                    <h2 class="section-identifier">Company Offers</h2>
+                    <div class="section-header">
+                        <div><p>Company</p><p>Product</p><p>Stock</p><p>Surplus</p><p>Required Profit</p><p>Sell By</p></div>
+                    </div>
+
+                    <div class="offers" id="offers-parent">
+                        <div class="offer" style="display: none;"><p>Example Offer</p><p>500</p><p>150</p><p>Day 6000</p></div></div>
+                    </div>
+                </div>
+
+                <div id="prices">
+                    
+                </div>
+
+                <div id="order">
+                    
+                </div>
+
+                <div id="competition">
+                    
+                </div>
+            </div>
+        </div>
+
+        <script src="/static/js/update.js"></script>
+        <script src="/static/js/contracts.js"></script>
+    </body>
+</html>
